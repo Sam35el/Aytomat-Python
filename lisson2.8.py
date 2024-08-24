@@ -1,3 +1,5 @@
-lst =[11, 5, 8, 32, 5, 3, 20, 132, 21, 4, 555, 9, 20]
-result =sum(lst)
-print(result)
+lst = []
+#[ 18, 14, 10, 6, 2 ]
+for x in range(18, 1, -4):
+    lst.append(x)
+print(lst)    

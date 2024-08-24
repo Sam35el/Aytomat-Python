@@ -1,14 +1,15 @@
-def fizz_buzz(n):
-    for i in range(1, n + 1):
-        if i % 3 == 0 and i % 5 == 0:
-            print("FizzBuzz")
-        elif i % 3 == 0:
-            print("Fizz")
-        elif i % 5 == 0:
-            print("Buzz")
-        else:
-            print(i)
+def month_to_season(num):
+    if num == 12 and num >= 1 and num < 3:
+        print("Зима")
+    if num >= 3 and num <= 5:
+        print("Весна")
+    if num >= 3 and num <= 5:
+            print("Лето")
+    if num >= 9 and num <= 11:
+        print("Осень")
 
-
-n = int(input("Введите число: "))
-fizz_buzz(n)
+try:
+    num = int(input("Введите число месяца: "))
+except ValueError: 
+    print("Это не число.")
+month_to_season(num)

@@ -1,5 +1,14 @@
-def is_year_leap(y):
-    return f'год {y} высокостный?: {y %4 == 0}'
-print (is_year_leap (2024))
-print (is_year_leap (2023))
-print (is_year_leap (2022))
+def fizz_buzz(n):
+    for i in range(1, n + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            print("FizzBuzz")
+        elif i % 3 == 0:
+            print("Fizz")
+        elif i % 5 == 0:
+            print("Buzz")
+        else:
+            print(i)
+
+
+n = int(input("Введите число: "))
+fizz_buzz(n)
